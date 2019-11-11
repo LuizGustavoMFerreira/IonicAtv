@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calcular Peso Ideal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Titulo da page -->
+  <ion-row>
+    <ion-col>
+      <h2 class="title">Peso Ideal Homens</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label position="fixed">Nome</ion-label>
+          <ion-input placeholder="Digite o nome.." type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <!-- Input para o 1° valor -->
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label position="fixed">Altura</ion-label>
+          <ion-input placeholder="Digite a altura.." type="number" [(ngModel)]="altura"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <!-- Botão para calcular -->
+  <ion-row>
+    <ion-col>
+      <ion-button color="danger" expand="block" (click)="calcularM()">Calcular</ion-button>
+    </ion-col>
+  </ion-row>
+  <!-- Input que exibe resultado -->
+  <ion-row>
+    <ion-col> 
+      <ion-item>
+        <ion-label position="fixed">Resultado</ion-label>
+        <ion-input [value]="exibeResultado()"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>    
+</ion-content>
