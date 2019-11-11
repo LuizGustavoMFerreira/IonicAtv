@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  private altura: number;
+  private resultado: number;
+
+  calcularM(){
+    this.resultado = (this.altura +100) * 0.9;
+  }
+
+  exibeResultado(): string{
+    return (this.resultado).toString() + " kg";
+  }
 
 }

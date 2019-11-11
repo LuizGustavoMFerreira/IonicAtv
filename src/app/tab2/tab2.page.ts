@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  private altura: number;
+  private resultado: number;
+
+  calcularF(){
+    this.resultado = (this.altura +100) * 0.85;
+  }
+
+  exibeResultado(): string{
+    return (this.resultado).toString() + " kg";
+  }
 
 }
