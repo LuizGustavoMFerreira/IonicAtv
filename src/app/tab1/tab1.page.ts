@@ -14,8 +14,8 @@ export class Tab1Page {
     this.resultado = (this.altura +100) * 0.9;
   }
 
-  exibeResultado(): string{
-    return (this.resultado).toString() + " kg";
+  exibeResultado(): number{
+    return this.resultado;
   }
 
 }

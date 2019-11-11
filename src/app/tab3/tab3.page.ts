@@ -13,12 +13,12 @@ export class Tab3Page {
 
   constructor() {}
 
-  calcularIMC(){
+  calculaIMC(){
     this.imc = this.peso / (this.altura * this.altura);
   }
 
-  exibeIMC(): string{
-    return (this.imc).toString() + " do seu imc" ;
+  exibeIMC(): number{
+    return this.imc;
   }
 
 }
